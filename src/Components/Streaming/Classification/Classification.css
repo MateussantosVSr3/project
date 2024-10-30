@@ -1,0 +1,168 @@
+.Classification {
+    text-align: center;
+    justify-content: center;
+    margin-top: 160px;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+	position: absolute;
+	left: 70px;
+	top: 120px;
+	z-index: 99;
+}
+.main-container {
+	display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-items: center; 
+    align-items: center;
+}
+
+.pilots {
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+}
+
+.pilots i {
+	color: #000;
+	font-size: 20px;
+	margin-left: -50px;
+}
+
+.photo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 200px;
+	margin-bottom: -20px;
+	z-index: 99;
+}
+
+.fa-eye {
+	color: #000;
+	font-size: 20px;
+	margin-left: -50px;
+}
+
+.text h2{
+	margin-top: -10px;
+}
+
+.main-box {
+	cursor: pointer;
+    position: relative;
+    height: 50px; 
+    width: 120px; 
+    background: rgba(240, 243, 245, 0.767);
+    main-box-sizing: border-main-box;
+    padding: 5px; 
+    transition: .5s;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.6s ease;
+}
+
+.main-box h3 {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: bold;
+}
+
+.main-box h2 {
+	font-size: 17px;
+	color: #000;
+	font-weight: bold;
+}
+
+.main-box:before, .main-box:after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 0%;
+	border: 5px solid var(--white-color);
+	opacity: 0;
+	transition: .5s;
+	main-box-sizing: border-main-box;
+}
+
+.main-box:before {
+	top: 0;
+	left: 0;
+	border-top-left-radius: 10px;
+}
+
+.main-box:after {
+	bottom: 0;
+	right: 0;
+	border-bottom-right-radius: 10px;
+}
+
+.main-box:hover:before, .main-box:hover:after {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	transition-delay: .3s;
+}
+
+.main-box span {
+	position: absolute;
+	top: 0;
+	left: -110%;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.3);
+	transition: .5s;
+	transform: skewX(10deg);
+}
+
+.main-box:hover span {
+	left: 110%;
+}
+
+@media (max-width: 768px) {
+	.container {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 480px) {
+	.Classification {
+		top: 50px;
+		left: 0px;
+		margin-left: -40px;
+	}
+	.fa-eye {
+		font-size: 15px !important;
+	}
+	.photo {
+		display: none;
+	}
+	.main-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 50px;
+	}
+	.main-box h3 {
+		text-align: center;
+		font-size: 9px;
+	}
+	.main-box h2 {
+		font-size: 9px;
+	}
+	.fa-arrow-right {
+		margin-bottom: -20px;
+		margin-left: 50px !important;
+	}
+	.main-container {
+		margin-top: -40px;
+		margin-left: -50px;
+		display: flex;
+	}
+}

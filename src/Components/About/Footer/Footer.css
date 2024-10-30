@@ -1,0 +1,87 @@
+.footer-02 {
+    position: relative;
+    color: var(--white-color);
+    padding: 7rem 0;
+    background-color: var(--black-color);
+}
+
+.footer .container {
+    position: relative;
+}
+
+.footer-02 h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    line-height: 1.5;
+}
+
+.footer-02 .links li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    display: block;
+}
+
+.footer-02 .links li a {
+    color: var(--gray-color);
+}
+
+.footer .links li a:hover {
+    color: var(--white-color);
+}
+
+.footer-02 .social li {
+    display: inline-block;
+    position: relative;
+}
+
+.footer-02 .social li a {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+.footer-02 .social li a > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transition: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.footer-02 .footer-logo {
+    color: var(--white-color);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}   
+
+.footer-02 .copyright {
+    color: var(--gray-color);
+}
+
+.footer-02 .cta {
+    -webkit-box-shadow: -20px -20px 0 0 var(--shadow);
+    box-shadow: -20px -20px 0 0 var(--shadow);
+    padding: 20px;
+    background-color: var(--main-color);
+    top: -150px;
+    position: relative;
+}
+
+.footer-02 .cta h2, .footer-02 .cta h3 {
+    line-height: 1.5;
+}
+
+.footer-02 .cta h3 {
+    font-size: 20px;
+}

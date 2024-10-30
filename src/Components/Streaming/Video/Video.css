@@ -1,0 +1,47 @@
+.video {
+    width: 70%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #100B25;
+    position: relative; 
+    flex-direction: column;
+}
+
+.race {
+    margin-top: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.video-player {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px var(--shadow);
+}
+
+@media (max-width: 768px) {
+    .video {
+        text-align: center;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .video h1 {
+        font-size: 20px;
+    }
+    .video-player {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .video-player {
+        flex-direction: column;
+        align-items: center;
+    }
+}

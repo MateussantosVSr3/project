@@ -1,0 +1,24 @@
+.body {
+    background-color: #100B25;
+}
+.screens {
+    margin-top: 145px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) {
+    .screens {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .screens {
+        margin-top: 70px;
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+:root {
+  --white-color: #fff;
+  --main-color: #0011ff;
+  --box-color: rgba(255, 255, 255, 0.6);
+  --shadow: rgba(0, 0, 0, .1);
+  --black-color: #000000;
+  --gray-color: #4b4b4b;
+  --second-main-color: #28376f;
+  --second-shadow: #0011ff73;
+  --white-shadow: rgba(255, 255, 255, 0.1);
+  --chat-color: #ffffff31;
+
+      /* Times */
+      --cupra: #194997;
+      --andretti: #ed3124;
+      --penske: #cba65f;
+      --envision: hsl(132, 100%, 37%);
+      --ert: #3c3c3c;
+      --jaguar: #000000;
+      --mahindra: #dd052b;
+      --maserati: #001489;
+      --neom: #ff8000;
+      --nissan: #c3002f;
+      --porsche: #d5001c;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--white-color);
+}
+
+a {
+  text-decoration: none !important;
+}
