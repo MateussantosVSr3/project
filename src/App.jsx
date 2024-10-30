@@ -11,7 +11,6 @@ import Register from './Components/Register/Register';
 
 function App() {
   return (
-    <BrowserRouter basename="/project">
     <Router>
       <Routes>
         <Route path="/project" element={<Home />} />
